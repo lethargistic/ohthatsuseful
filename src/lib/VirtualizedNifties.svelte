@@ -78,20 +78,13 @@
 
 <svelte:window onscroll={updateViewport} onresize={updateViewport}/>
 
+<!--sort of a half-fix but it is usable-->
+<!--in a way that is-->
+<noscript class="content-cards">
+    <p>Please enable javascript to show all cards.</p>
+    <p>Alternatively, reload to refresh the list if you cannot.</p>
+</noscript>
 {#if nifties.length > 0 && visibleCards}
-    <noscript class="content-cards">
-        <style>
-            .content-cards-real {
-                display: none !important;
-            }
-        </style>
-        {#each nifties as nift (nift.id)}
-            <div class="card-wrapper">
-                <Card {nift} {focusedNift} {handleFocus}/>
-            </div>
-        {/each}
-    </noscript>
-
     <div bind:this={containerElem} class="content-cards content-cards-real">
         <!--dummy elem so we know the height-->
         <div bind:this={cardWrapElem} class="card-wrapper dummy" aria-hidden="true">

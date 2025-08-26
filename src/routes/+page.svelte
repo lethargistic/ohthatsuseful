@@ -354,7 +354,7 @@
 <!-- -->
 <main class="home-main">
     <noscript>
-        <p class="nojs-txt">This site relies on javascript quite a lot, so your experience might not be the most pleasant, enable
+        <p class="nojs-txt">This site relies on javascript heavily, so your experience might not be the most pleasant, enable
         javascript if you can!</p></noscript>
     <section class="h1-seg">
         {#if addiction}

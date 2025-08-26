@@ -12,6 +12,8 @@
 - [ ] : maybe add animation to easter egg but later
 - [ ] : maybe make admin page more usable 
       ; comma tags instead of 3 inputs ; nvm
+- [ ] : maybe dark mode???
+- [ ] : mayb fix scrollbar flashing on focus out
 
 - [x] : fix flip + v8n (it's funky on mobile at least*)   
 - [x] : seo
@@ -30,10 +32,9 @@
 - [x] : make pseudo tab clickable ; went a bit of a different route lol
 - [x] : add contact link to footer
 - [x] : mayb play around with the blur
-- [x] : mayb fix scrollbar flashing on focus out
 - [x] : can't forget to implement stashing
 - [x] : add no results styles ; geese
-- [ ] : fix if icon is white (e.g Github)
+- [x] : fix if icon is white (e.g Github)
 
 - [ ] : PROD: make sure the puppeteer serverless function doesn't take too long ; (Vercel has 300s limit at max) or move to something else (abuse Supabase's edge functions?)
 - [ ] : PROD: THE WEEKLY API CALLER
@@ -68,8 +69,7 @@
 - [x] : https://oklch.com/: what: website, thing ; which: tool, converter, open-source, design, art, dev, web-dev, one-page ; why: useful, free, progressive ; OKLCH color converter and picker. You don't know what OKLCH is? TL;DR: most color spaces we typically use like RGB or HSL suck because they don't align with the way our eyes work, and that makes composing harmonic colors for whatever you do harder than it should be, OKLAB (and subsequently OKLCH) solve that problem. More info [here](https://evilmartians.com/chronicles/oklch-in-css-why-quit-rgb-hsl).
 - [x] : https://yomitan.wiki/: what: browser-extension; which: collection, language-learning, open-source; why: useful, free; Pop-up dictionary browser extension. You shift click the word and see its meaning. Used for learning Japanese and more, and if you're doing just that check out the [resources page](https://learnjapanese.moe/resources/) on TheMoeWay for more stuff.
 - [x] : https://github.com/donkuri/Kaishi: what: thing ; which: collection, language-learning, open-source ; why: useful, free; The best Anki (flashcard software) deck for starting learning Japanese. I'm totally not biased whatsoever no, no, wdym. Just kidding, it's really great.
-- [ ] : https://unsplash.com/: The title says it all. Free critter pics.
-- [ ] : https://fuckingfast.net/: Fast, minimal file hosting. Free for temporary file hosting and non-profits (read the [pricing](https://fuckingfast.net/pricing) page). 
+- [x] : https://fuckingfast.net/: what: website, service ; which: hosting, dev, web-dev ; why: useful, mostly-free, fast, minimal ; Fast, minimal file hosting. The name is silly, but it does live up to it. Now you can store your goose photos somewhere. Free for temporary file hosting and non-profits (read the [pricing](https://fuckingfast.net/pricing) page). 
 - [ ] : https://revolt.chat/: A better Discord alternative in almost every way. Does not have that many users as of 2025, but good to keep in mind.
 - [ ] : https://archive.org/: Often very useful when researching something and for lots of other reasons. The archive of the internet!
 - [ ] : https://archive.md/: Another archive of the internet.
@@ -95,3 +95,6 @@
 - [ ] : https://www.flaticon.com/: Free icons for almost anything you might think of! Also consider https://fontawesome.com/free, https://lucide.dev if you want a different look. *insert lots of icons for showcase*
 - [ ] : https://www.music-map.com/ : Find artists similar to the ones you listen to on a map. This works stupidly well for finding obscure artists and the deepest corners of the internet. Take that algorithm, I'm gonna speed you up.
 - [ ] : https://www.cia.gov/the-world-factbook/ : Ever wanted to know how much of Switzerland's area is water? World lizard day? How much of Antarctica is ice and rock? The CIA got you covered! Damn is that a weird sentence.
+
+maybe:
+- [ ] : https://www.critter.pics/: The title says it all. Free critter pics.
