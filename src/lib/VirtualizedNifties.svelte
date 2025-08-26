@@ -79,7 +79,20 @@
 <svelte:window onscroll={updateViewport} onresize={updateViewport}/>
 
 {#if nifties.length > 0 && visibleCards}
-    <div bind:this={containerElem} class="content-cards">
+    <noscript class="content-cards">
+        <style>
+            .content-cards-real {
+                display: none !important;
+            }
+        </style>
+        {#each nifties as nift (nift.id)}
+            <div class="card-wrapper">
+                <Card {nift} {focusedNift} {handleFocus}/>
+            </div>
+        {/each}
+    </noscript>
+
+    <div bind:this={containerElem} class="content-cards content-cards-real">
         <!--dummy elem so we know the height-->
         <div bind:this={cardWrapElem} class="card-wrapper dummy" aria-hidden="true">
             <div class="card">
@@ -91,9 +104,9 @@
         <div style="flex-basis:100%; height:{startRow * rowHeight}px;"></div>
 
         <!--make sure it's not in a parent from which is can calculate its position or offsetTop dies-->
-        {#each visibleCards as nift, i (nift.id)}
+        {#each visibleCards as nift (nift.id)}
             <div animate:flip={{ duration: anim, delay: 20 }} class="card-wrapper">
-                <Card {nift} {focusedNift} {handleFocus} />
+                <Card {nift} {focusedNift} {handleFocus}/>
             </div>
         {/each}
 
@@ -104,9 +117,11 @@
     {@const honk = Math.floor(Math.random() * 3) === 0}
     <div class="no-results-seg">
         {#if honk}
-            <img src="/img/bootlegcellshadedgoosewsmokingpipeexcepthonk.webp" title="yes, i photoshopped a pipe to a goose" alt="A goose except i photoshopped a pipe in">
+            <img src="/img/bootlegcellshadedgoosewsmokingpipeexcepthonk.webp"
+                 title="yes, i photoshopped a pipe to a goose" alt="A goose except i photoshopped a pipe in">
         {:else}
-            <img src="/img/bootlegcellshadedgoosewsmokingpipe3.webp" title="yes, i photoshopped a pipe to a goose" alt="A goose except i photoshopped a pipe in">
+            <img src="/img/bootlegcellshadedgoosewsmokingpipe3.webp" title="yes, i photoshopped a pipe to a goose"
+                 alt="A goose except i photoshopped a pipe in">
         {/if}
         <p>Our scout geese have not found what you requested.</p>
         <p>Try a different query or shuffling some tags.</p>

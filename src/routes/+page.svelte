@@ -43,7 +43,7 @@
 
     const hasTags = (item: typeof data.nifties[number], selectedTags: string[]) => {
         return selectedTags.length === 0 || selectedTags.some(tag =>
-            Object.values(item.tags).some((arr: typeof data.nifties[number])  => arr.includes(tag))
+            Object.values(item.tags).some((arr: typeof data.nifties[number]) => arr.includes(tag))
         );
     };
 
@@ -300,7 +300,7 @@
     jsonLD['@graph'][1]['itemListElement'] = data.nifties.map((nift, i) => ({
         "@type": "ListItem",
         "url": nift.link,
-        "position": i+1,
+        "position": i + 1,
         "image": nift.screenshot,
         "name": nift.display_name,
         "description": nift.comment
@@ -353,6 +353,9 @@
 {/if}
 <!-- -->
 <main class="home-main">
+    <noscript>
+        <p class="nojs-txt">This site relies on javascript quite a lot, so your experience might not be the most pleasant, enable
+        javascript if you can!</p></noscript>
     <section class="h1-seg">
         {#if addiction}
             <div class="addiction">
@@ -379,6 +382,15 @@
 
 
 <style>
+    .nojs-txt {
+        position: absolute;
+        top: 5%;
+        left: 50%;
+        transform: translateX(-50%);
+        color: black;
+        font-weight: bold;
+    }
+
     .addiction {
         position: absolute;
         top: 7vh;

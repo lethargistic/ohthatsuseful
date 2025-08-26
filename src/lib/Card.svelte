@@ -18,6 +18,11 @@
         </div>
         <a class="card-info-link" href={nift.link} target="_blank" rel="noopener">🔗</a>
     </div>
+    <noscript>
+        <p class="nojs-comment">
+        {nift.comment}
+        </p>
+    </noscript>
     <p class="card-screenshot-link-wrap">
         <img class="card-screenshot" loading="lazy" src={nift.screenshot_smol} width="500" height="281"
              alt={nift.name}>
@@ -25,6 +30,11 @@
 </div>
 
 <style>
+    .nojs-comment {
+        padding: 1rem 0;
+        color: #393939;
+    }
+
     .focused {
         position: relative;
         z-index: 1002;
