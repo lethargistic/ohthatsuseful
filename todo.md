@@ -4,10 +4,10 @@
 - [ ] : seo
 - [x] : fix db order
 - [ ] : mayb sort tags
-- [ ] : maybe swap disclaimers to top on mobile? (decide)
+- [x] : maybe swap disclaimers to top on mobile? (decide)
 - [x] : add fuse.js search with tags client side
 - [x] : you forgot to change the row size for virtualization for responsive and it's all broken now how could you
-- [ ] : make everything responsive an nojs (pain)
+- [x] : make everything responsive an nojs (pain)
 - [x] : fix: you can scroll in modal sometimes (no idea what triggers it) why ; it doesn't apply the class (fuck) ; it was doing that if you clicked to fast
 - [ ] : mayb an alternatives field
 - [x] : maybe add a copyright field for things where that's necessary
@@ -25,22 +25,23 @@
 - [x] : make pseudo tab clickable ; went a bit of a different route lol
 - [ ] : make evil-unevil pfp (the halo thing)
 - [ ] : rebrand?????
-- [x] : add contact link to footer
 - [ ] : prettify my account readme
+- [x] : add contact link to footer
 - [x] : mayb play around with the blur
 - [ ] : mayb fix scrollbar flashing on focus out
 - [ ] : maybe add animation to easter egg but later
-- [ ] : can't forget to implement stashing
-- [ ] : add no results styles
+- [x] : can't forget to implement stashing
+- [x] : add no results styles ; geese
 - [ ] : cool afterfx animations would go so well here if i want to 
       ; pop anim for focus
       ; h1 anim 
       ; mayb some more, provided they don't hurt ux
 
-- [ ] : POPULATED: make sure search almost always returns at least something for better ux when ur done with populating the nifties + play around with anim timings
+- [ ] : PROD: THE WEEKLY API CALLER
 - [ ] : PROD: FLIP THE API TO HEADLESS
-- [ ] : PROD: ROBOTS.TXT!!!
+- [ ] : PROD: ENABLE EVERYTHING IN ROBOTS.TXT!!!
 
+- [ ] : scrap: POPULATED: make sure search almost always returns at least something for better ux when ur done with populating the nifties + play around with anim timings ; nvm can't skip the geese
 - [ ] : scrap: maybe make the focus 0-25-75-100 instead of 50-100 ; nvm, user expectations on this would slightly feel off
 
 // DOES NOT HAVE TO BE SYNCED
