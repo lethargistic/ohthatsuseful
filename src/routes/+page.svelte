@@ -43,7 +43,7 @@
 
     const hasTags = (item: typeof data.nifties[number], selectedTags: string[]) => {
         return selectedTags.length === 0 || selectedTags.some(tag =>
-            Object.values(item.tags).some(arr => arr.includes(tag))
+            Object.values(item.tags).some((arr: typeof data.nifties[number])  => arr.includes(tag))
         );
     };
 
@@ -263,8 +263,49 @@
             codeIx = 0;
         }
     }
-</script>
 
+    // seo
+
+    type ListItem = {
+        "@type": string,
+        "url": string,
+        "name": string,
+        "description": string
+    }
+
+    const title = "Oh that's useful";
+    const desc = "Party tricks for developers and chronically online people.";
+    const ogimg = "https://www.ohthatsuseful.com/img/ogimg.png";
+    const canonUrl = "https://www.ohthatsuseful.com";
+    const jsonLD = $state(
+        {
+            "@context": "https://schema.org",
+            "@graph": [
+                {
+                    "@type": "WebSite",
+                    "name": title,
+                    "image": ogimg,
+                    "url": canonUrl,
+                    "description": desc,
+                },
+                {
+                    "@type": "ItemList",
+                    "name": title,
+                    "itemListElement": [] as Array<ListItem>
+                }
+            ]
+        }
+    )
+
+    jsonLD['@graph'][1]['itemListElement'] = data.nifties.map((nift, i) => ({
+        "@type": "ListItem",
+        "url": nift.link,
+        "position": i+1,
+        "image": nift.screenshot,
+        "name": nift.display_name,
+        "description": nift.comment
+    }))
+</script>
 
 <svelte:window onclick={focus ? (e) => {handleUnfocus(e)} : () => {}}
                onkeydown={(e) => {summonDevOverlay(e); handleCheatCode(e);}}
@@ -273,8 +314,30 @@
 />
 <svelte:body bind:this={bodyElem}/>
 <svelte:head>
+    <title>Oh that's useful</title>
+    <meta name="robots" content="index, follow"/>
+
+    <meta name="description" content={desc}>
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content={title}>
+    <meta name="twitter:description" content={desc}>
+    <meta name="twitter:image" content={ogimg}>
+
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:title" content={title}>
+    <meta property="og:description" content={desc}>
+    <meta property="og:url" content={canonUrl}>
+    <meta property="og:image" content={ogimg}>
+
+    <link rel="canonical" href={canonUrl}/>
+
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
     <link rel="preconnect" href="https://fonts.gstatic.com"/>
+
+    {@html `<script type="application/ld+json">
+        ${JSON.stringify(jsonLD)}
+    </script>`}
 </svelte:head>
 
 <!-- dev only -->
@@ -303,7 +366,7 @@
     </section>
     <TagSeg tags={data.tags} bind:query={query} bind:selectedTags={selectedTags}/>
     <section class="content-seg">
-        <VirtualizedNifties {cardsPerRow} nifties={searchedNifties} {focusedNift} {handleFocus} {anim} />
+        <VirtualizedNifties {cardsPerRow} nifties={searchedNifties} {focusedNift} {handleFocus} {anim}/>
     </section>
 </main>
 {#if focus && focusedNift}

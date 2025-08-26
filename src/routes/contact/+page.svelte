@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
     import Footer from "$lib/Footer.svelte";
     import TooltipText from "$lib/TooltipText.svelte";
 
@@ -19,7 +19,61 @@
             link: 'https://github.com/maksiksq',
         }
     ]
+
+    // seo
+
+    const title = "Contact";
+    const desc = "Contact page of Oh That's Useful. Questionably useful.";
+    const ogimg = "https://www.ohthatsuseful.com/img/ogimg.png";
+    const canonUrl = "https://www.ohthatsuseful.com/contact";
+    const jsonLD = $state(
+        {
+            "@context": "https://schema.org",
+            "@graph": [
+                {
+                    "@type": "WebSite",
+                    "name": "Oh that's useful",
+                    "image": ogimg,
+                    "url": canonUrl,
+                    "description": desc,
+                },
+                {
+                    "@type": "ContactPage",
+                    "name": title,
+                    "url": canonUrl,
+                    "description": desc,
+                }
+            ]
+        }
+    )
 </script>
+
+<svelte:head>
+    <title>Oh that's useful</title>
+    <meta name="robots" content="index, follow"/>
+
+    <meta name="description" content={desc}>
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content={title}>
+    <meta name="twitter:description" content={desc}>
+    <meta name="twitter:image" content={ogimg}>
+
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:title" content={title}>
+    <meta property="og:description" content={desc}>
+    <meta property="og:url" content={canonUrl}>
+    <meta property="og:image" content={ogimg}>
+
+    <link rel="canonical" href={canonUrl}/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com"/>
+
+    {@html `<script type="application/ld+json">
+        ${JSON.stringify(jsonLD)}
+    </script>`}
+</svelte:head>
 
 <main>
     <section class="text-seg">

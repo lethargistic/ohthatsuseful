@@ -1,6 +1,6 @@
 <script lang="ts">
-    import {onMount, tick} from "svelte";
-    import {flip} from "svelte/animate"
+    import {onMount} from "svelte";
+    import {flip} from "svelte/animate";
     import Card from "$lib/Card.svelte";
 
     const {nifties, focusedNift, handleFocus, cardsPerRow, anim = 0} = $props();
@@ -74,13 +74,6 @@
         favicon: nifties[0].favicon,
         screenshot_smol: nifties[0].screenshot_smol,
     }
-
-    $inspect(anim);
-    $effect(() => {
-        console.log(startRow);
-        console.log(rowHeight);
-        console.log("becomes:", startRow * rowHeight);
-    })
 </script>
 
 <svelte:window onscroll={updateViewport} onresize={updateViewport}/>

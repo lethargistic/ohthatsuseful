@@ -45,12 +45,12 @@
 
 // DOES NOT HAVE TO BE SYNCED
 // CHECK DB/SITE FOR ACCURATE INFO
-- [ ] : 1: what: "website", "thing" | which: "assets", "asset-packs", "game-dev", "dev", "game-design", "design", "one-page" | why: "useful", "free", "no-copyright"
-- [ ] : 2: what "website" | which: "css-generator", "generator", "one-page", "open-source", "dev", "web-dev" | why: "useful", "free"
-- [ ] : 3: what "website" | which: "css-generator", "generator", "one-page", "open-source", "dev", "web-dev" | why: "useful", "free"
-- [ ] : 4: what: "website" | which: "collection", "domains", "dev", "web-dev" | why: "useful", "free"
-- [ ] : 5: what: "website" | which: "calculator", "converter", "dev" | why: "useful", "free"
-- [ ] : 6: what: "website" | which: "collection", "emoji", "dev" | why: "useful", "free"
+- [x] : 1: what: "website", "thing" | which: "assets", "asset-packs", "game-dev", "dev", "game-design", "design", "one-page" | why: "useful", "free", "no-copyright"
+- [x] : 2: what "website" | which: "css-generator", "generator", "one-page", "open-source", "dev", "web-dev" | why: "useful", "free"
+- [x] : 3: what "website" | which: "css-generator", "generator", "one-page", "open-source", "dev", "web-dev" | why: "useful", "free"
+- [x] : 4: what: "website" | which: "collection", "domains", "dev", "web-dev" | why: "useful", "free"
+- [x] : 5: what: "website" | which: "calculator", "converter", "dev" | why: "useful", "free"
+- [x] : 6: what: "website" | which: "collection", "emoji", "dev" | why: "useful", "free"
 
 - [x] : https://umami.is/: If thy steal your data, thy steal politely. The most effortless, no-cookies, free, open-source analytics platform. You just plug it in. No need for an annoying pop-up (looking at you google analytics) and it just does its job instead of feeding the clankers or something. You can self-host it too! It's great.
 - [x] : https://thenicestplace.net/: THEY JUST GIVE YOU A HUG! ; what: website ; which: random ; why: free-hugs, fun
@@ -58,7 +58,7 @@
 - [x] : https://www.pexels.com/: what: website, service ; which: collection, design, dev, stock-images ; why: useful, mostly-free ; Free beautiful stock images. Has lots of high-quality pics, including cats. Similar to [Unsplash](https://unsplash.com/).
 - [x] : https://oklch.com/: what: website, thing ; which: tool, converter, open-source, design, art, dev, web-dev, one-page ; why: useful, free, progressive ; OKLCH color converter and picker. You don't know what OKLCH is? TL;DR: most color spaces we typically use like RGB or HSL suck because they don't align with the way our eyes work, and that makes composing harmonic colors for whatever you do harder than it should be, OKLAB (and subsequently OKLCH) solve that problem. More info [here](https://evilmartians.com/chronicles/oklch-in-css-why-quit-rgb-hsl).
 - [x] : https://yomitan.wiki/: what: browser-extension; which: collection, language-learning, open-source; why: useful, free; Pop-up dictionary browser extension. You shift click the word and see its meaning. Used for learning Japanese and more, and if you're doing just that check out the [resources page](https://learnjapanese.moe/resources/) on TheMoeWay for more stuff.
-- [ ] : https://github.com/donkuri/Kaishi: The best Anki (flash card software) deck for starting learning Japanese. I'm totally not biased whatsoever no no wdym (just kidding, it's really great).
+- [ ] : https://github.com/donkuri/Kaishi: what:  ; which: ; why: ; The best Anki (flashcard software) deck for starting learning Japanese. I'm totally not biased whatsoever no no wdym (just kidding, it's really great).
 - [ ] : https://unsplash.com/: The title says it all. Free critter pics.
 - [ ] : https://fuckingfast.net/: Fast, minimal file hosting. Free for temporary file hosting and non-profits (read the [pricing](https://fuckingfast.net/pricing) page). 
 - [ ] : https://revolt.chat/: A better Discord alternative in almost every way. Does not have that many users as of 2025, but good to keep in mind.
