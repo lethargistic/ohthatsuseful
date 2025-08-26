@@ -34,6 +34,10 @@ export const updatePuppeteerData = async (link: string, nodb: boolean = false) =
             }
         }
 
+        await page.emulateMediaFeatures([
+            {name: 'prefers-color-scheme', value: 'light'},
+        ]);
+
         await page.setUserAgent("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/115 Safari/537.36");
         await page.setViewport({width: 1536, height: 864});
 
@@ -103,7 +107,10 @@ export const updatePuppeteerData = async (link: string, nodb: boolean = false) =
         await page.waitForSelector('link[rel~="icon"], link[rel="shortcut icon"]', { timeout: 5000 }).catch(() => {});
 
         let faviconUrl = await page.evaluate(() => {
-            const iconLink: HTMLLinkElement | null = document.querySelector('link[rel~="icon"][type="image/svg+xml"]')
+            const iconLink: HTMLLinkElement | null =
+                document.querySelector('link[rel~="icon"][type="image/svg+xml"][media~="(prefers-color-scheme: light)"]')
+                || document.querySelector('link[rel~="icon"][type="image/svg+xml"]')
+                || document.querySelector('link[rel="icon"][media~="(prefers-color-scheme: light)"]')
                 || document.querySelector('link[rel="icon"]')
                 || document.querySelector('link[rel="shortcut icon"]');
             if (!iconLink) {

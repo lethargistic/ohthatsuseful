@@ -1,48 +1,56 @@
 - [ ] : finish the thing
 - [ ] : don't forget to remove the debug buttons
+- [ ] : mayb an alternatives field- [ ] : update fields on insert in db
+- [ ] : implement override (maybe make it a complex file type instead of a comma string too?)
+- [ ] : change svg background color when hovering over an image
+      ; will it still look good tho?
+- [ ] : maybe replace link emoji with custom icon
+- [ ] : cool afterfx animations would go so well here if i want to
+      ; pop anim for focus
+      ; h1 anim
+      ; mayb some more, provided they don't hurt ux
+- [ ] : maybe add animation to easter egg but later
+- [ ] : maybe make admin page more usable 
+      ; comma tags instead of 3 inputs ; nvm
+
 - [x] : fix flip + v8n (it's funky on mobile at least*)   
-- [ ] : seo
+- [x] : seo
 - [x] : fix db order
-- [ ] : mayb sort tags
 - [x] : maybe swap disclaimers to top on mobile? (decide)
 - [x] : add fuse.js search with tags client side
 - [x] : you forgot to change the row size for virtualization for responsive and it's all broken now how could you
 - [x] : make everything responsive an nojs (pain)
 - [x] : fix: you can scroll in modal sometimes (no idea what triggers it) why ; it doesn't apply the class (fuck) ; it was doing that if you clicked to fast
-- [ ] : mayb an alternatives field
 - [x] : maybe add a copyright field for things where that's necessary
-- [ ] : make sure the puppeteer serverless function doesn't take too long ; (Vercel has 300s limit at max) or move to something else (abuse Supabase's edge functions?)
 - [x] : maybe move to playwright to avoid captcha's and stuff because Puppeteer community seems dead-ish??? A lot of work tho innit. 
       ; kinda solved by running headless: false once and that's more than good enough for most sites.
-- [ ] : update fields on insert in db
-- [ ] : implement override (maybe make it a complex file type instead of a comma string too?)
-- [ ] : change svg background color when hovering over an image
-      ; will it still look good tho?
 - [x] : play around with h1 size again later and rethink the design with a fresh head pls
 - [x] : rotate h1 on click
-- [ ] : maybe replace link emoji with custom icon
 - [x] : do virtualization or something about loading ; virtualization would be snappier than loading it from the db so i'll do that, a bit later tho
 - [x] : make pseudo tab clickable ; went a bit of a different route lol
+- [x] : add contact link to footer
+- [x] : mayb play around with the blur
+- [x] : mayb fix scrollbar flashing on focus out
+- [x] : can't forget to implement stashing
+- [x] : add no results styles ; geese
+- [ ] : fix if icon is white (e.g Github)
+
+- [ ] : PROD: make sure the puppeteer serverless function doesn't take too long ; (Vercel has 300s limit at max) or move to something else (abuse Supabase's edge functions?)
+- [ ] : PROD: THE WEEKLY API CALLER
+- [x] : PROD: FLIP THE API TO HEADLESS ; did that already because cpu fry
+- [ ] : PROD: ENABLE EVERYTHING IN ROBOTS.TXT!!!
+
+//
+//
+//
+
+- [ ] : scrap: mayb sort tags
+- [ ] : scrap: POPULATED: make sure search almost always returns at least something for better ux when ur done with populating the nifties + play around with anim timings ; nvm can't skip the geese
+- [ ] : scrap: maybe make the focus 0-25-75-100 instead of 50-100 ; nvm, user expectations on this would slightly feel off
+
 - [ ] : make evil-unevil pfp (the halo thing)
 - [ ] : rebrand?????
 - [ ] : prettify my account readme
-- [x] : add contact link to footer
-- [x] : mayb play around with the blur
-- [ ] : mayb fix scrollbar flashing on focus out
-- [ ] : maybe add animation to easter egg but later
-- [x] : can't forget to implement stashing
-- [x] : add no results styles ; geese
-- [ ] : cool afterfx animations would go so well here if i want to 
-      ; pop anim for focus
-      ; h1 anim 
-      ; mayb some more, provided they don't hurt ux
-
-- [ ] : PROD: THE WEEKLY API CALLER
-- [ ] : PROD: FLIP THE API TO HEADLESS
-- [ ] : PROD: ENABLE EVERYTHING IN ROBOTS.TXT!!!
-
-- [ ] : scrap: POPULATED: make sure search almost always returns at least something for better ux when ur done with populating the nifties + play around with anim timings ; nvm can't skip the geese
-- [ ] : scrap: maybe make the focus 0-25-75-100 instead of 50-100 ; nvm, user expectations on this would slightly feel off
 
 // DOES NOT HAVE TO BE SYNCED
 // CHECK DB/SITE FOR ACCURATE INFO
@@ -59,7 +67,7 @@
 - [x] : https://www.pexels.com/: what: website, service ; which: collection, design, dev, stock-images ; why: useful, mostly-free ; Free beautiful stock images. Has lots of high-quality pics, including cats. Similar to [Unsplash](https://unsplash.com/).
 - [x] : https://oklch.com/: what: website, thing ; which: tool, converter, open-source, design, art, dev, web-dev, one-page ; why: useful, free, progressive ; OKLCH color converter and picker. You don't know what OKLCH is? TL;DR: most color spaces we typically use like RGB or HSL suck because they don't align with the way our eyes work, and that makes composing harmonic colors for whatever you do harder than it should be, OKLAB (and subsequently OKLCH) solve that problem. More info [here](https://evilmartians.com/chronicles/oklch-in-css-why-quit-rgb-hsl).
 - [x] : https://yomitan.wiki/: what: browser-extension; which: collection, language-learning, open-source; why: useful, free; Pop-up dictionary browser extension. You shift click the word and see its meaning. Used for learning Japanese and more, and if you're doing just that check out the [resources page](https://learnjapanese.moe/resources/) on TheMoeWay for more stuff.
-- [ ] : https://github.com/donkuri/Kaishi: what:  ; which: ; why: ; The best Anki (flashcard software) deck for starting learning Japanese. I'm totally not biased whatsoever no no wdym (just kidding, it's really great).
+- [x] : https://github.com/donkuri/Kaishi: what: thing ; which: collection, language-learning, open-source ; why: useful, free; The best Anki (flashcard software) deck for starting learning Japanese. I'm totally not biased whatsoever no, no, wdym. Just kidding, it's really great.
 - [ ] : https://unsplash.com/: The title says it all. Free critter pics.
 - [ ] : https://fuckingfast.net/: Fast, minimal file hosting. Free for temporary file hosting and non-profits (read the [pricing](https://fuckingfast.net/pricing) page). 
 - [ ] : https://revolt.chat/: A better Discord alternative in almost every way. Does not have that many users as of 2025, but good to keep in mind.
