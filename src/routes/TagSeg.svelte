@@ -10,6 +10,8 @@
         selectedTags = selectedTags.filter((t: String) => t !== tag);
     }
 
+    // typescript shut up
+    const tagsReal: Record<string, Array<string>> = $state(tags);
 
 </script>
 <section class="tag-seg">
@@ -19,7 +21,7 @@
         <button class="sr-only">Search</button>
     </section>
     <section class="tag-seg-tags">
-        {#each Object.entries(tags) as [key, values] (key)}
+        {#each Object.entries(tagsReal) as [key, values] (key)}
             <p class="tag-cat">{key}</p>
             <ul>
                 {#each values as tag (tag)}
