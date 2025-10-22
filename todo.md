@@ -1,4 +1,5 @@
-- [ ] : finish the thing
+- [x] : finish the ui
+- [ ] : fill in contents
 - [ ] : don't forget to remove the debug buttons
 - [ ] : mayb an alternatives field- [ ] : update fields on insert in db
 - [ ] : implement override (maybe make it a complex file type instead of a comma string too?)
@@ -70,7 +71,7 @@
 - [x] : https://yomitan.wiki/: what: browser-extension; which: collection, language-learning, open-source; why: useful, free; Pop-up dictionary browser extension. You shift click the word and see its meaning. Used for learning Japanese and more, and if you're doing just that check out the [resources page](https://learnjapanese.moe/resources/) on TheMoeWay for more stuff.
 - [x] : https://github.com/donkuri/Kaishi: what: thing ; which: collection, language-learning, open-source ; why: useful, free; The best Anki (flashcard software) deck for starting learning Japanese. I'm totally not biased whatsoever no, no, wdym. Just kidding, it's really great.
 - [x] : https://fuckingfast.net/: what: website, service ; which: hosting, dev, web-dev ; why: useful, mostly-free, fast, minimal ; Fast, minimal file hosting. The name is silly, but it does live up to it. Now you can store your goose photos somewhere. Free for temporary file hosting and non-profits (read the [pricing](https://fuckingfast.net/pricing) page). 
-- [ ] : https://revolt.chat/: A better Discord alternative in almost every way. Does not have that many users as of 2025, but good to keep in mind.
+- [ ] : https://revolt.chat/: what: oh my fucking god i can leave the country what is this day; ; ; A better Discord alternative in almost every way. Does not have that many users as of 2025, but good to keep in mind.
 - [ ] : https://archive.org/: Often very useful when researching something and for lots of other reasons. The archive of the internet!
 - [ ] : https://archive.md/: Another archive of the internet.
 - [ ] : https://vercel.com/: Questionable company but hands down the best free (and maybe not just free) website hosting out there. Probably already integrated with your favorite JS framework! Pairs well with Supabase for a database or storage.
@@ -82,7 +83,6 @@
 - [ ] : https://easingwizard.com/: CSS easing functions with bézier curves. Pretty ultimate if I'd have to say so.
 - [ ] : https://www.freepublicapis.com/tags/best: 400+ free public apis. A treat for a developer. yum.
 - [ ] : https://csshero.org/mesher/: A reasonable CSS gradient generator.
-- [ ] : https://bansal.io/pattern-css: CSS library for patterns.
 - [ ] : https://www.magicpattern.design/: A collection of pattern generators for CSS and svg's. Most notably, https://www.magicpattern.design/tools/geometric-patterns and https://www.magicpattern.design/tools/css-backgrounds. 
 - [ ] : https://getcssscan.com/css-box-shadow-examples: CSS box shadow examples. This is where I steal most of my shadows, before I realize it doesn't work here, and it's time to remake it manually. 
 - [ ] : https://www.hcaptcha.com/: Free captcha.
