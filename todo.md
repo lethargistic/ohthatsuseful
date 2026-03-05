@@ -1,3 +1,5 @@
+- [ ] : VERY HIGH: fix prod deployments from github (and only) being wonk
+
 - [x] : finish the ui
 - [ ] : fill in contents
 - [ ] : don't forget to remove the debug buttons
