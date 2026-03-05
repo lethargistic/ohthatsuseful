@@ -228,7 +228,7 @@
             setTimeout(() => {
                 focusedNift = null;
             }, 200)
-
+            // TODO: man forgor visit buton
             // timeout so the animation goes away to prevent a visible layout shift
             setTimeout(() => {
                 if (!bodyElem) return;

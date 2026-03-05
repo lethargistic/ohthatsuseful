@@ -25,7 +25,7 @@
 	<meta name="apple-mobile-web-app-title" content="Oh that's useful" />
 	<link rel="manifest" href="/site.webmanifest" />
 
-	<meta name="author" content="Maksiks"/>
+	<meta name="author" content="Lethargistic"/>
 	<meta name="theme-color" content="#ffffff"/>
 	<meta property="og:site_name" content="Oh that's useful"/>
 </svelte:head>
