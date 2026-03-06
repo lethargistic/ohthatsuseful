@@ -1,4 +1,4 @@
-- [ ] : VERY HIGH: fix prod deployments from github (and only) being wonk ;
+- [x] : VERY HIGH: fix prod deployments from github (and only) being wonk ; sdbisdfsiqwfwoqfqodj it was just an unupdated dependency giving a funny
 
 - [x] : finish the ui
 - [ ] : fill in contents
