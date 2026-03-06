@@ -16,7 +16,6 @@
 	},
 	"devDependencies": {
 		"@playwright/test": "^1.49.1",
-		"@sveltejs/adapter-auto": "^6.0.0",
 		"@sveltejs/kit": "^2.22.0",
 		"@sveltejs/vite-plugin-svelte": "^6.0.0",
 		"@vitest/browser": "^3.2.3",
@@ -36,11 +35,12 @@
 	"dependencies": {
 		"@supabase/ssr": "^0.7.0",
 		"@supabase/supabase-js": "^2.55.0",
+		"@sveltejs/adapter-vercel": "^6.3.3",
 		"@types/canvas-confetti": "^1.9.0",
 		"canvas-confetti": "^1.9.3",
 		"fuse.js": "^7.1.0",
 		"jose": "^6.0.12",
 		"puppeteer": "^24.16.1",
-		"sharp": "^0.34.3"
+		"sharp": "^0.34.5"
 	}
 }
