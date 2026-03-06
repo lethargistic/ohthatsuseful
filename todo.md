@@ -1,4 +1,4 @@
-- [ ] : VERY HIGH: fix prod deployments from github (and only) being wonk
+- [ ] : VERY HIGH: fix prod deployments from github (and only) being wonk ;
 
 - [x] : finish the ui
 - [ ] : fill in contents
